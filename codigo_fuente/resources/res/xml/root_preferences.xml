@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:key="category_root_access" app:title="@string/pref_root_access_category">
+        <Preference app:key="root_status" app:persistent="false" app:title="@string/pref_root_status_title"/>
+    </PreferenceCategory>
+    <PreferenceCategory app:key="category_root_features" app:title="@string/pref_root_features_category">
+        <SwitchPreferenceCompat app:defaultValue="false" app:key="root_screen_off" app:persistent="true" app:summary="@string/pref_root_screen_off_summary" app:title="@string/pref_root_screen_off_title"/>
+        <SwitchPreferenceCompat app:defaultValue="false" app:icon="@mipmap/ic_launcher_legacy" app:key="root_touch_injection" app:persistent="true" app:summary="@string/pref_root_touch_injection_summary" app:title="@string/pref_root_touch_injection_title"/>
+    </PreferenceCategory>
+</PreferenceScreen>

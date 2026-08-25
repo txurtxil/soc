@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:id="@id/projection_surface_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <idv.lzn.screenonauto.projection.PassThroughColumn android:gravity="end" android:layout_gravity="end|bottom|center" android:orientation="vertical" android:id="@id/toggle_column" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+        <ImageView android:id="@id/force_landscape_button" android:background="@drawable/bg_map_action_button" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="64.0dip" android:layout_height="64.0dip" android:scaleType="fitCenter" />
+        <ImageView android:id="@id/auto_dim_button" android:background="@drawable/bg_map_action_button" android:padding="16.0dip" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginTop="16.0dip" android:scaleType="fitCenter" />
+        <ImageView android:id="@id/back_button" android:background="@drawable/bg_map_action_button" android:padding="16.0dip" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginTop="16.0dip" android:src="@drawable/ic_back" android:scaleType="fitCenter" android:contentDescription="@string/action_back" />
+        <ImageView android:id="@id/home_button" android:background="@drawable/bg_map_action_button" android:padding="16.0dip" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginTop="16.0dip" android:src="@drawable/ic_home" android:scaleType="fitCenter" android:contentDescription="@string/action_home" />
+        <ImageView android:id="@id/recents_button" android:background="@drawable/bg_map_action_button" android:padding="16.0dip" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginTop="16.0dip" android:src="@drawable/ic_recents" android:scaleType="fitCenter" android:contentDescription="@string/action_recents" />
+    </idv.lzn.screenonauto.projection.PassThroughColumn>
+    <idv.lzn.screenonauto.projection.PassThroughScroll android:layout_gravity="end|center|top" android:id="@id/shortcut_bar_scroll" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/shortcut_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </idv.lzn.screenonauto.projection.PassThroughScroll>
+</FrameLayout>

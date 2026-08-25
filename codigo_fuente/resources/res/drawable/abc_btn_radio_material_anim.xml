@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:id="@+id/on" android:drawable="@drawable/car_drawer_max_width"/>
+    <item android:id="@+id/off" android:drawable="@drawable/car_drawer_header_menu_button_size"/>
+    <transition android:drawable="@drawable/btn_radio_on_to_off_mtrl_animation" android:toId="@+id/off" android:fromId="@+id/on"/>
+    <transition android:drawable="@drawable/btn_radio_off_to_on_mtrl_animation" android:toId="@+id/on" android:fromId="@+id/off"/>
+</animated-selector>
