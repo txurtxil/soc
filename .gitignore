@@ -1,4 +1,7 @@
 *.apk
 *.zip
 *.jar
-jadx_bin/
+*.idsig
+mi_firma.keystore
+aapt2-arm64
+proyecto_apk/build/

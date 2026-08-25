@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <array name="auto_dim_delay_entries">
-        <item>15초</item>
-        <item>30초</item>
-        <item>60초</item>
-        <item>120초</item>
-    </array>
-</resources>
