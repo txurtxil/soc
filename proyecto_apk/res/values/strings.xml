@@ -20,10 +20,10 @@
     <string name="abc_searchview_description_submit">Submit query</string>
     <string name="abc_searchview_description_voice">Voice search</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <string name="about_author">© 2026 Chih-En Liu</string>
-    <string name="about_donate_bubbletea_url">https://www.paypal.com/ncp/payment/NSZL98LMSGYWE</string>
-    <string name="about_donate_paypal_url">https://paypal.me/slzn0124</string>
-    <string name="about_github_url">https://github.com/slzn/ScreenOnAuto-releases</string>
+    <string name="about_author">© 2026 txurtxil</string>
+    <string name="about_donate_bubbletea_url">https://ko-fi.com/txurtxil</string>
+    <string name="about_donate_paypal_url">https://github.com/txurtxil/soc/tree/main/proyecto_apk</string>
+    <string name="about_github_url">https://github.com/txurtxil/soc/tree/main/proyecto_apk</string>
     <string name="about_link_donate_bubbletea">Buy me a bubble tea 🧋 →</string>
     <string name="about_link_donate_paypal">Donate via PayPal →</string>
     <string name="about_link_github">View on GitHub →</string>
