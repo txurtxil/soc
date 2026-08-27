@@ -174,4 +174,10 @@ Will launch when mirroring and Android Auto are both active. Tap to change."</st
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
     <string name="v7_preference_off">OFF</string>
     <string name="v7_preference_on">ON</string>
+    <string name="shortcut_advanced_short">Ajustes avanzados</string>
+    <string name="shortcut_advanced_long">Abrir ajustes avanzados</string>
+    <string name="shortcut_root_short">Ajustes root</string>
+    <string name="shortcut_root_long">Abrir ajustes root</string>
+    <string name="shortcut_launch_short">Accesos directos</string>
+    <string name="shortcut_launch_long">Abrir accesos directos de lanzamiento</string>
 </resources>

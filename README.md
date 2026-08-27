@@ -19,3 +19,13 @@ Si `apktool b` falla con `attribute ... not found` (atributos ocultos del framew
 Para que Android Auto ofrezca esta app como candidata dentro de sus categorias restringidas, es necesario instalarla mediante **KingInstaller** en lugar de una instalacion normal - esto hace que el sistema la trate como si procediera de Play Store.
 
 **Aviso conocido**: este metodo depende de un permiso de accesibilidad adicional que en Android 14/15/16 puede aparecer bloqueado/gris sin acceso root en el dispositivo. Si esto ocurre, no es un fallo de esta build - es una restriccion de plataforma con la que se choca sistematicamente este tipo de instalacion en Android moderno.
+
+## Novedades (v1.8.0)
+
+- **Icono personalizado**: launcher, icono dentro de Android Auto y servicio de medios, con identidad visual violeta/oscuro unificada.
+- **Accesos directos del launcher** (mantener pulsado el icono de la app): Ajustes avanzados, Ajustes root, Accesos directos de lanzamiento.
+- **Tiles de Ajustes rapidos** (desplegable de notificaciones, icono de editar > arrastrar a la zona activa):
+  - *Iniciar mirroring*: abre la app y dispara el flujo de consentimiento de captura de pantalla. Requiere tener activado "Iniciar automaticamente" en Ajustes de la app.
+  - *Detener mirroring*: corta la sesion de mirroring en curso sin necesidad de abrir la app.
+
+Estas dos ultimas requieren un paso de compilacion adicional (Kotlin -> dex -> smali fusionado), ademas de Apktool: `kotlinc`, `d8` del Android SDK build-tools, y `android.jar` como classpath. El codigo Kotlin de cada TileService se compila por separado, se empaqueta en un APK contenedor minimo, y se descompila con el propio Apktool para obtener un `.smali` garantizado compatible antes de fusionarlo en `proyecto_apk/smali/`.

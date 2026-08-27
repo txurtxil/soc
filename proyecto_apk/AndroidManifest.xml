@@ -34,10 +34,12 @@
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts" />
         </activity>
-        <activity android:exported="false" android:name="idv.lzn.screenonauto.LaunchShortcutsActivity" android:parentActivityName="idv.lzn.screenonauto.MainActivity"/>
-        <activity android:exported="false" android:name="idv.lzn.screenonauto.AdvancedSettingsActivity" android:parentActivityName="idv.lzn.screenonauto.MainActivity"/>
-        <activity android:exported="false" android:name="idv.lzn.screenonauto.RootSettingsActivity" android:parentActivityName="idv.lzn.screenonauto.MainActivity"/>
+        <activity android:exported="true" android:name="idv.lzn.screenonauto.LaunchShortcutsActivity" android:parentActivityName="idv.lzn.screenonauto.MainActivity"/>
+        <activity android:exported="true" android:name="idv.lzn.screenonauto.AdvancedSettingsActivity" android:parentActivityName="idv.lzn.screenonauto.MainActivity"/>
+        <activity android:exported="true" android:name="idv.lzn.screenonauto.RootSettingsActivity" android:parentActivityName="idv.lzn.screenonauto.MainActivity"/>
         <service android:exported="false" android:foregroundServiceType="mediaProjection" android:name="idv.lzn.screenonauto.ScreenCaptureService"/>
         <provider android:authorities="idv.lzn.screenonauto.shizuku" android:enabled="true" android:exported="true" android:multiprocess="false" android:name="rikka.shizuku.ShizukuProvider" android:permission="android.permission.INTERACT_ACROSS_USERS_FULL"/>
         <service android:exported="false" android:name="idv.lzn.screenonauto.privileged.PrivilegedRootService"/>
@@ -95,5 +97,25 @@
                 <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
             </intent-filter>
         </receiver>
+            <service
+            android:name="idv.lzn.screenonauto.tile.MirrorTileService"
+            android:exported="true"
+            android:icon="@drawable/ic_tile_mirror"
+            android:label="Iniciar mirroring"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+            <service
+            android:name="idv.lzn.screenonauto.tile.StopMirrorTileService"
+            android:exported="true"
+            android:icon="@drawable/ic_tile_stop_mirror"
+            android:label="Detener mirroring"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
     </application>
 </manifest>

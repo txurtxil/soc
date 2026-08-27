@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="advanced_settings"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:shortcutShortLabel="@string/shortcut_advanced_short"
+        android:shortcutLongLabel="@string/shortcut_advanced_long">
+        <intent
+            android:targetPackage="idv.lzn.screenonauto"
+            android:targetClass="idv.lzn.screenonauto.AdvancedSettingsActivity"
+            android:action="android.intent.action.MAIN" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="root_settings"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:shortcutShortLabel="@string/shortcut_root_short"
+        android:shortcutLongLabel="@string/shortcut_root_long">
+        <intent
+            android:targetPackage="idv.lzn.screenonauto"
+            android:targetClass="idv.lzn.screenonauto.RootSettingsActivity"
+            android:action="android.intent.action.MAIN" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="launch_shortcuts"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:shortcutShortLabel="@string/shortcut_launch_short"
+        android:shortcutLongLabel="@string/shortcut_launch_long">
+        <intent
+            android:targetPackage="idv.lzn.screenonauto"
+            android:targetClass="idv.lzn.screenonauto.LaunchShortcutsActivity"
+            android:action="android.intent.action.MAIN" />
+    </shortcut>
+</shortcuts>
